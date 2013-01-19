@@ -1,0 +1,10 @@
+Week 02 Home Assignment
+
+1. build from http_serv5.py from lab
+2. created format_directory method to format links
+3. walk thru images subdirectory and web direction, make them html clickable
+4. the temp file is called result.html, the function reads it back and return the result
+5. the directory walk will skip this temp file
+6. to make make_time.py return HTML page, use subprocess to dump the result in a separate file
+7. found that I need to use time.sleep() to allow system enough time to execute python file
+
