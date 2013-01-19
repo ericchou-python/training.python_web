@@ -1,6 +1,6 @@
 Week 02 Home Assignment
 
-1. build from http_serv5.py from lab
+1. build from http_serv5.py from lab, copy to my_http_serv5.py
 2. created format_directory method to format links
 3. walk thru images subdirectory and web direction, make them html clickable
 4. the temp file is called result.html, the function reads it back and return the result
