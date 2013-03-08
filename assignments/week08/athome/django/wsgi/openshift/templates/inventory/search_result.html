@@ -1,0 +1,14 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">Manufacture</h3>
+
+{% if error %}
+  <p>Please submit a search term</p>
+{% endif %}
+
+<p>You Searched for: </p>
+<a href="/inventory/manufactures/{{ manufacture }}">{{ manufacture }}</a>
+<br>
+<a href="/inventory/search-manufacture/">Search Again</a>
+{% endblock %}

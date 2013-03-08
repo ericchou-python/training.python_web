@@ -1,0 +1,12 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">Add Manufacture</h3>
+
+  <form action="/inventory/add_manufacture_submit/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add" />
+  </form>
+
+{% endblock %}

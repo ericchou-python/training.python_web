@@ -1,0 +1,11 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">Manufacture</h3>
+
+{% for manu in manufacture %}
+  <ul>
+    <li><a href="/inventory/manufactures/{{ manu.manufacture_name }}">{{ manu.manufacture_name }}</a></li>
+  </ul> 
+{% endfor %}
+{% endblock %}

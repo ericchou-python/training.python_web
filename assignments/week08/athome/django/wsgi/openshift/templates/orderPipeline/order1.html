@@ -1,0 +1,17 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">Select Manufacture</h3>
+
+<form action="/orderPipeline/order2/" method="post">
+  {% csrf_token %}
+  <select name="manu_name">
+  {% for manu in manufactures %}
+    <option value={{ manu.manufacture_name }}>{{ manu.manufacture_name }}</option>
+    {% endfor %}
+  </select>
+  <input type="submit" value="Select"/>
+</form>
+
+{% endblock %}
+

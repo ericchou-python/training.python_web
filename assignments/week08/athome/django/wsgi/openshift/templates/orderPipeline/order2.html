@@ -1,0 +1,19 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">Select Product</h3>
+
+<p>{{ manufacture_name }}</p>
+
+<form action="/orderPipeline/order3/" method="post">
+    <select name="product_name">
+    {% for p in product_list %}
+      <option value={{ p }}>{{ p }}</option>
+    {% endfor %}
+   </select>
+   <!hidden value to carry over the manufacture name -->
+   <input type="hidden" value={{ manufacture_name }} name="manufacture_name" />
+    <input type="submit" value="Select" />
+</form>
+{% endblock %}
+

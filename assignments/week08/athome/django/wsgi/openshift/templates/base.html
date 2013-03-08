@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Our Inventory Management System</title>
+<link href="/static/css/styles.css" rel="stylesheet" type="text/css">
+<link href="/static/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="/static/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="banner">
+		<p>Inventory Management</p>
+		<ul id="MenuBar1" class="MenuBarHorizontal">
+            <li><a href="/inventory/manufactures/">Home</a>			</li>
+            <li><a href="/inventory/orderPipeline/">Order</a>        </li>
+			<li><a href="/inventory/manufactures/" class="MenuBarItemSubmenu">Menufacture</a>
+				<ul>
+					<li><a href="/inventory/search-manufacture/">Search</a></li>
+					<li><a href="/inventory/add_manufacture/">Add</a></li>
+				</ul>
+			</li>
+			<li><a class="MenuBarItemSubmenu" href="/inventory/manufactures/">About Us</a>
+				<ul>
+					<li><a href="/inventory/manufactures/">Directions</a></li>
+</ul>
+			</li>
+</ul>
+	</div>
+	<h1>貨源管理</h1>
+      <div class="content">
+      {% block content %}
+      {% endblock %}
+      </div>
+	<div class="footer">
+		<p>Copyright 2013 <a href="http://www.cosmofarmer.com/">Pythonic NetEng</a>. </p>
+	
+	<p>Contact Us via e-mail (<a href="mailto:info@foo.com">info@pythonicneteng.com</a>) or by phone (123-456-7890).</p>
+	</div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"/static/SpryAssets/SpryMenuBarDownHover.gif", imgRight:"/static/SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

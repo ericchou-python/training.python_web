@@ -1,0 +1,17 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">{{ manufacture }}</h3>
+
+{% for key, value in products.items %}
+  <ul>
+    <li>{{ key }}:</li>
+        <ul>
+            <li>EU: {{ value.price_euro }}</li>
+            <li>NT: {{ value.price_nt }} </li>
+            <li>QTY: {{ value.qty }} </li>
+        </ul>
+  </ul> 
+{% endfor %}
+{% endblock %}
+

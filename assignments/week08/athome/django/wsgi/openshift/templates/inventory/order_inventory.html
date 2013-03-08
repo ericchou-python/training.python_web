@@ -1,0 +1,11 @@
+{% extends "inventory_base.html" %}
+
+{% block content %}
+<h3 align="center">Order Form</h3>
+
+  <form action="/inventory/order/" method="post">
+    <input type="text" name="manufacture">
+    <input type="submit" value="order">
+  </form>
+
+{% endblock %}
