@@ -18,6 +18,16 @@ Create a Django site that prototypes inventory control:
  - see separate email for admin login for Instructors
 5. Use HTML/CSS to make site presentation (re-learned Dreamweaver and Spray for menu)
 
+*** OpenShift document ***
+
+- Spent LOTS of time figuring out RedHat's OpenShift PaaS platform
+- Documents I found most helpful:
+Getting Started: http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/index.html
+How to build Django on OpenShift: https://github.com/openshift/django-example
+How to push local repo into OpenShift: https://openshift.redhat.com/community/forums/openshift/how-to-push-local-django-repo-into-openshift
+How to use CNAME to point to OpenShift: https://openshift.redhat.com/community/faq/i-have-deployed-my-app-but-i-don%E2%80%99t-like-telling-people-to-visit-myapp-myusernamerhcloudcom-how-c
+
+
 *** Project Details ***
 
 March 12, 2013:
