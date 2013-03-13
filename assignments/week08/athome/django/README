@@ -3,12 +3,34 @@
 Create a Django site that prototypes inventory control:
 
 1. Allow user to see a list of available manufactures
+ - https://esmee.pythonicneteng.com/inventory/manufactures/
 2. Allow users to see inventory count on each manufactures
-3. Allow users to place orders and inventory is automatically updated
+ - example: https://esmee.pythonicneteng.com/inventory/manufactures/Manufacture_1/
+3. Allow users to place orders and inventory is automatically updated (not done)
+ - click on order
+ - log in using sales1/sales1
+ - redirect to https://esmee.pythonicneteng.com/orderPipeline/
+ - select Manufacture
+ - select product (decided to use hidden field in form instead of cookie)
+ - need to complete teh pipeline
 4. Needs user authentication
-
+ - use default authentication 
+ - see separate email for admin login for Instructors
+5. Use HTML/CSS to make site presentation (re-learned Dreamweaver and Spray for menu)
 
 *** Project Details ***
+
+March 12, 2013:
+
+- Added step zip file for running locally on laptop
+- To run locally: 
+
+1. Download the tgz ~/training.python_web/assignments/week08/athome/django/week10_django.tgz
+2. Untar/Unzip via 'tar -xvzf week10_django.tgz'
+3. cd to ~/django/wsgi/openshift
+4. Change the settings-local.py file to fit local database. Note there is an if loop for running on openshift (sqlite3) and local (mysql). 
+5. run local server via 'python ~/django/wsgi/openshift$ python manage.py runserver 0.0.0.0:8080 --settings=settings-local
+
 
 March 8, 2013: 
 
